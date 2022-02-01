@@ -1,0 +1,99 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 9px;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
+    max-width: 270px;
+}
+
+.card__title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.card__description {
+    font-weight: 300;
+}
+
+.card__info {
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    display: flex;
+    justify-content: space-between;    
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    font-size: 12px;
+}
+
+.card_creation_info {
+    display: flex;
+    align-items: center;
+}
+
+.card__img {
+    background-image: url("images/image-equilibrium.jpg");
+    background-repeat: no-repeat;
+    height: 270px;
+    background-size: cover;
+    border-radius: 6px;
+}
+
+.card__eye {
+    background-image: url("images/icon-view.svg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+    display: none;
+}
+
+.etherium_days__left, .card__description, .card_creation_info__label {
+    color: hsl(215, 51%, 70%);
+}
+
+.avatar {
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+}
+
+.etherium_count, .etherium_days {
+  display: flex;
+  align-items: center;
+}
+
+.etherium_count__text, .card__title:hover, .card_creation_info__profile:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.card__img:hover {
+    color: hsl(178, 100%, 50%);
+    opacity: 0.5;
+}
+.card__title:hover, .card__img:hover, .card_creation_info__profile:hover {
+    cursor: pointer;
+}
+
+.etherium_count__text, .etherium_days__left {
+    margin-left: 6px;
+}
+
+.card_profile {
+    margin-left: 9px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 375px) {
+    .card__img {        
+      width: initial;
+    }
+    
+}
